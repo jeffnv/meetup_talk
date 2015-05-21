@@ -4,24 +4,24 @@
 * was explaining [this user model][user_model]
 * one very clever student noticed `super` in `password_digest` getter
   (line 23)
-* his question was 'how' is super working here, but I answered 'why'
+* his question was 'how' is `super` working here, but I answered 'why'
 * he clarified that he understood what it was doing, but now how
 * so I answered why again
 * he clarified once more and I realized I had always just accepted it
 * yet another time for me to look at the code and say "I don't know how
   that works", in front of 50 people
-* we tolerate a lot of magic in rails
+* we tolerate a lot of magic in Rails
 * so I decided to try and make a model
 
 ### The Model
 
 #### Defining Accessors Lazily Based on Column Names
 * needs to define attribute methods
-* should do it lazily, do it upon method missing
+* should do it lazily, upon method missing is a good enough time
 * need to keep track of whether we have built our accessors or not, so
   we don't do it infinity times, use a class instance variable type boolean
 * if we haven't built yet, call `self.define_accessors`
-* return early if already defined 
+* return early if already defined
 * also make an attributes method that returns a hash
 * iterate over column names, write getters and setters for each using
   `define_method`
