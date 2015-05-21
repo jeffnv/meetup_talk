@@ -1,14 +1,12 @@
 # What's the deal with `super`?
 
-* start by explaining the context, explaining details of how the user
-  model works. Explaining validations, password digest, and session
-  token
-* one very clever student noticed super in password override
+* was explaining [this user model][user_model]
+* one very clever student noticed `super` in `password_digest` getter
 * his question was 'how' but I answered 'why'
 * he clarified that he understood what it was doing
 * so I answered why again
 * he clarified and I realized I had always just accepted it
-* ps. we hired the guy
+* p.s. we hired the guy
 * yet another time for me to look at the code and say "i don't know how
   that works", in front of 50 people
 * we tolerate a lot of magic
@@ -49,3 +47,4 @@
 [methods_4_0_2]: https://github.com/rails/rails/blob/4-0-stable/activerecord/lib/active_record/attribute_methods.rb
 [methods_4_2_0]: https://github.com/rails/rails/blob/4-2-stable/activerecord/lib/active_record/core.rb
 [core]: https://github.com/rails/rails/blob/4-2-stable/activerecord/lib/active_record/attribute_methods.rb 
+[user_model]: app/models/user.rb
