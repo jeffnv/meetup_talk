@@ -41,8 +41,8 @@
 * attribute methods are defined lazily
 * used to define attribute methods using method missing, the first time
   they are used (4.0.2)
-* now they are defined when the first instance is created (allocate is
-  overwritten, also in initialize) (4.2.0)
+* now they are defined when the first instance is created (`initialize`
+  in the base classe) (4.2.0)
 * a module is created and set as an
   instance variable when ActiveRecord::Base is inherited
 * when the methods are written they go into this module
@@ -54,6 +54,6 @@
 * [active model core (4.2.0)][core]
 
 [methods_4_0_2]: https://github.com/rails/rails/blob/4-0-stable/activerecord/lib/active_record/attribute_methods.rb
-[methods_4_2_0]: https://github.com/rails/rails/blob/4-2-stable/activerecord/lib/active_record/core.rb
-[core]: https://github.com/rails/rails/blob/4-2-stable/activerecord/lib/active_record/attribute_methods.rb 
+[methods_4_2_0]: https://github.com/rails/rails/blob/4-2-stable/activerecord/lib/active_record/attribute_methods.rb 
+[core]: https://github.com/rails/rails/blob/4-2-stable/activerecord/lib/active_record/core.rb
 [user_model]: app/models/user.rb
