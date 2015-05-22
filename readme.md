@@ -47,6 +47,10 @@
   instance variable when ActiveRecord::Base is inherited
 * when the methods are written they go into this module
 
+## Try it Yourself!
+* [here is the template I used to get started][blank_sm]
+* [here is the finished version for your reference][completed_sm]
+
 
 ## References
 * [attribute methods (4.0.2)][methods_4_0_2]
@@ -57,3 +61,5 @@
 [methods_4_2_0]: https://github.com/rails/rails/blob/4-2-stable/activerecord/lib/active_record/attribute_methods.rb 
 [core]: https://github.com/rails/rails/blob/4-2-stable/activerecord/lib/active_record/core.rb
 [user_model]: app/models/user.rb
+[blank_sm]: super_model.rb
+[completed_sm]: super_model_complete.rb
