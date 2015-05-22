@@ -6,4 +6,5 @@ class User < ARBase
   def name
     super + "!!!"
   end
+
 end

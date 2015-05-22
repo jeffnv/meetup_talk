@@ -39,8 +39,8 @@
 ## Key Points
 * ActiveRecord stores data in a central `attributes` hash
 * attribute methods are defined lazily
-* used to define attribute methods using method missing, the first time
-  they are used (4.0.2)
+* previous rails versions defined attribute methods using `method_missing`, 
+  the first time they are used (4.0.2)
 * now they are defined when the first instance is created (`initialize`
   in the base classe) (4.2.0)
 * a module is created and set as an
